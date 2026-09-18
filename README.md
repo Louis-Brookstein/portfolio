@@ -1,6 +1,7 @@
 # Portfolio — Louis Brookstein
 
-Three projects, each one built for a named person with a specific problem.
+Four projects. Each one had a specific person who had to be able to use it, and
+a specific problem that cost them real money.
 The source repositories are private; these are the case studies.
 
 ---
@@ -15,6 +16,23 @@ instead of queueing for a designer. **In production.**
 
 `TypeScript · Three.js · Claude · Gemini · Docker · Caddy`
 119 commits to first deploy · ~10,800 lines · 16 real units built
+
+---
+
+### [Lab Scout](case-studies/lab-scout.md)
+
+A deal radar for the fragmented used lab-equipment market. Ingests eBay, dealer
+sites and auction feeds, extracts structured records with an LLM, scores them
+against hard buy-box gates, and alerts a human who makes every decision.
+**No buy actions anywhere in the codebase — that boundary is the product.**
+
+```
+Extraction: {'done': 388, 'failed': 2}
+Scoring:    {'scored': 941, 'pass': 12, 'reject': 337, 'flag': 592}
+```
+
+`Python · Claude · SQLite · Playwright · Telegram`
+~3,400 lines · 690 lines of strategy in YAML, not code · 12 test files
 
 ---
 
